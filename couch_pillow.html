@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Pillow Shopping Website</title>
+    <meta charset="UTF-8">
+    <!-- styles -->
+    <link rel="stylesheet" type="text/css" href="couch_pillow.css">
+    <script src="web.js" type="text/javascript"></script>
+    <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap" rel="stylesheet">
+  </head>
+
+<body onload="onLoad()">
+  <!-- Page-->
+  <div id="page" class="site"> 
+
+
+    <!-- Global header -->
+    <div class="global-header"> 
+      <div class="top-bar">
+        <a class="top-words" href="home.html">Fluff Stuff</a>
+      </div>
+
+      <!--MENU HEADER-->
+
+      <nav id="main-navigation" class="header">
+
+        <!--LEFT MENU-->
+        <div class="menu-left">
+            <a href="index.html">Home</a>
+            <a href="product.html">Product</a>
+            <a href="about-us.html">About Us</a>
+            <a href="faq.html">FAQ</a>
+        </div>
+        <!--LEFT MENU-->
+
+        <!--RIGHT MENU-->
+        <div class="menu-right">
+          <a href="cart.html"><img src="./images/cart.png" alt="Shopping Cart"></a>
+          <a href="account.html"><img src="./images/user-head.png" alt="Account icon"></a>
+          <p class="account">
+          <a href="account.html">My Account</a>
+          </p>
+          <div class="cart-l">
+            <!-- cart label -->
+            <img id="circle" src="" alt="cart-c">
+            <div id="cartQ" class="small-circle"> </div>
+            <!-- End: cart label -->            
+          </div>
+        </div>
+        <!--RIGHT MENU-->
+
+
+      
+      </nav>
+      <!--MENU HEADER-->
+
+    </div> 
+    <!-- Global header -->
+
+    <!-- Couch Pillow Settings -->
+    <div id="customizable-details" class="details">
+
+      <!-- Big Picture -->
+      <div class="main-image">
+        <img id = "big-pic1" src="" alt="pillow picture1">
+      </div>
+      <!-- Big Picture -->
+
+      <!-- Customizable settings -->
+      <div class="name-price">
+        <p class="product-title">Couch Pillow</p>
+        <p class="price">$20.00</p>
+        <p class="color-desription">Color: </p>
+        <div id = "color-name" class="c-name"></div>
+        <p class="size">Size*:</p>
+        <button type="button" class="size-button">
+          <p class="size-descript">One Size</p>
+        </button>
+
+        <p class="quantity">Qty:</p>
+        <!-- Quantity Selector -->
+        <div class="q-selector">
+          <select class="amount" id="amount">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
+        </div>
+        <!-- End: Quantity Selector -->
+
+        <!-- Color -->
+        <div class="four-colors">
+          <span id = "gr" class="After-school-special"></span>
+          <span id = "yl" class="Morning-Haze"></span>
+          <span id = "bl" class="Cozy-Denim"></span>
+          <span id = "pk" class="Rainy-Day"></span>
+        </div>
+        <!--End: Color -->
+
+        <p class="Fill">Filled with:</p>
+        <!-- Filled Material -->
+        <div class="m-selector">
+          <select class="material" id="material">
+            <option value="Duck Down">Duck Down</option>
+            <option value="Memory Foam">Memory Foam</option>
+            <option value="Hyperallergenic poly-blend">Hyperallergenic poly-blend</option>
+          </select>
+        </div>
+        <!--End: Filled Material -->
+
+        <!-- Basket Button -->
+        <div class="basket-button" id="atc">
+          <p id="atc-1">Add To Cart</p>            
+        </div>
+        <!-- End: Basket Button -->
+      </div>
+      <!-- End: Customizable settings -->
+
+
+      <!-- Line separator -->
+      <div class="separator"></div>
+
+      <!-- Product Descriptions -->
+      <div class="descriptions">
+        <h2 class="detail-title">Product Details</h2>
+        <ul class="points">
+          <li>Made with patented interlocking fill, gives you the   exact support you need as an individual</li>
+          <li>Standard/Queen - 18.5 " x 28"</li>
+          <li>Machine washable and dryable -- 10-year warranty</li>
+          <li>Made 100% in the USA - Manufactured in our home city of Pittsburgh!</li>
+        </ul>
+      </div>
+
+      <!-- Image gallery -->
+      <div class="display">
+        <img id = "s-pic2" class="pics" src="" alt="image-1">
+        <img id = "s-pic3" class="pics" src="" alt="image-2">
+        <img id = "s-pic4" class="pics" src="" alt="image-3">
+      </div>
+
+    </div>
+    <!-- Couch Pillow Settings -->
+
+
+    <!-- bottom bar -->
+    <div class="bottom-bar"></div>
+
+  </div> 
+  <!-- Page-->
+
+
+
+
+
+
+
+</body>

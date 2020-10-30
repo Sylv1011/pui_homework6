@@ -1,0 +1,458 @@
+* {
+  box-sizing: border-box;
+}
+/* Universal Styles */
+
+@font-face {
+  font-family: "La Belle Aurore";
+  src: url("https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap");
+}
+
+/*The top bar with words*/
+.top-bar{
+    text-align: center;
+    background-color: #736C62;
+    color: white;
+    font-family: 'Paprika', cursive;
+    font-weight: 700;
+    font-size: 32px;
+    width: 100%;
+    height: 55px;
+    position: absolute;
+    top: 0;
+}
+
+.top-words{
+    text-decoration: none;
+    color: white;
+}
+
+/*The menu*/
+.header{
+    background-color: rgba(148, 148, 139, 0.71);
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    top: 55px;
+    z-index: 400;
+    font-family: "Pavanam", sans-serif;
+    font-size: 17px;
+    line-height: 1.25;
+    display: flex;
+    flex-direction: row;
+} 
+
+/*Left menu (only page options)*/
+.menu-left {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.menu-left a {
+  display: block;
+  color: #FFFFFF;
+  padding: 0px 20px;
+}
+
+/*Right side of the menu (include icons)*/
+
+.menu-right {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.menu-right a {
+  display: block;
+  color: #FFFFFF;
+  padding: 0px 3px 0px 15px;
+}
+
+.account a{
+  display: block;
+  color: #FFFFFF;
+  padding: 0px 15px 0px 0px;
+}
+
+/*bottom bar*/
+.bottom-bar{
+    background-color: #F3EFEC;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    top: 200%;
+}
+
+/*Title Shopping Cart*/
+.title h2{
+  font-family: "Gayathri", sans-serif;
+  font-size: 25px;
+  font-weight: lighter;
+  color: #000000;
+  position: absolute;
+  top: 15%;
+  left: 5%;
+  text-align: center;
+  line-height: 1.50;
+}
+
+/*Cart Attributes Make a Flex box)*/
+.cart {
+  width: 95%;
+  position: absolute;
+  top: 25%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.cart ul {
+  display: block;
+  color: black;
+  padding: 0px 8%;
+  font-family: "Pavanam", sans-serif;
+  font-weight: lighter;
+  font-size: 18px;
+}
+
+/*Two lines*/
+.line1 {
+  border: 2px solid;
+  color: #E6E5E3;
+  width: 95%;
+  height: 0px;
+  top: 25%;
+  position: absolute;
+  left: 2.5%
+}
+
+.line2 {
+  border: 2px solid;
+  color: #E6E5E3;
+  width: 95%;
+  height: 0px;
+  top: 32%;
+  position: absolute;
+  left: 2.5%
+}
+
+/*Items Display*/
+.display-box {
+  width: 95%;
+  position: absolute;
+  top: 35%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+
+}
+
+/*Image*/
+.pic {
+  width: 15%;
+  left: 2%;
+  position: absolute;
+}
+
+/*Item Description*/
+.item-descrip {
+  width: 25%;
+  position: absolute;
+  top: 35%;
+  left: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: left;
+}
+
+.item-descrip ul {
+  display: block;
+  color: black;
+  padding: 0 18%;
+  font-family: "Pavanam", sans-serif;
+  font-weight: lighter;
+  font-size: 15px;
+  margin-top: 3%;
+  margin-bottom: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+
+}
+
+
+/*Two-links*/
+.two-links {
+  width: 100%;
+  top: 130%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: left;
+}
+
+.two-links a{
+  display: block;
+  padding: 0 18%;
+  font-family: "Pavanam", sans-serif;
+  font-weight: lighter;
+  font-size: 15px;
+  margin-top: 2%;
+  margin-bottom: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+/*Show Price*/
+.show-price {
+  width: 25%;
+  position: absolute;
+  top: 35%;
+  left: 38%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: left;
+}
+
+.show-price p{
+  display: block;
+  color: black;
+  padding: 0 18%;
+  font-family: "Pavanam", sans-serif;
+  font-weight: lighter;
+  font-size: 15px;
+  margin-top: 3%;
+  margin-bottom: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+/*Qty*/
+.Qty-selector{
+  width: 60%;
+  top: 55%;
+  left: 62%;
+  position: relative;
+}
+
+.amount {
+  width: 11%;
+  height: 26px;
+  padding: 0 10px;
+  border: 1px solid #939395;
+  border-radius: 5px;
+  font: 1rem/normal Avenir Book,sans-serif;
+  letter-spacing: .06rem;
+  color: #5c5c5f;
+  position: absolute;
+}
+
+/*Total Price*/
+.total-price {
+  width: 25%;
+  position: absolute;
+  top: 35%;
+  left: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: left;
+}
+
+.total-price p{
+  display: block;
+  color: black;
+  padding: 0 18%;
+  font-family: "Pavanam", sans-serif;
+  font-weight: lighter;
+  font-size: 15px;
+  margin-top: 3%;
+  margin-bottom: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+/*Remove-link*/
+.remove-link {
+  width: 100%;
+  top: 570%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: left;
+}
+
+.remove-link a{
+  display: block;
+  padding: 0 18%;
+  font-family: "Pavanam", sans-serif;
+  font-weight: lighter;
+  font-size: 15px;
+  margin-top: 2%;
+  margin-bottom: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+/*Order Summary*/
+.order-summary p{
+  top: 82%;
+  left: 55%;
+  position: absolute;
+  font-family: "Pavanam", sans-serif;
+  font-weight: lighter;
+  font-size: 18px;
+}
+
+/*Summary Box*/
+.summary-box {
+  display: flex;
+  border: 1px solid #6D7A72;
+  left: 53%;
+  width: 40%;
+  height: 48%;
+  top: 90%;
+  position: absolute;
+}
+
+/*3 payments*/
+.three-payments {
+  width: 50%;
+  position: absolute;
+  display: flex;
+  top: 10%;
+  left: 0%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.three-payments ul{
+  display: block;
+  color: black;
+  padding: 0 18%;
+  font-family: "Pavanam", sans-serif;
+  font-weight: lighter;
+  font-size: 16px;
+  margin-top: 4%;
+  margin-bottom: 4%;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+/*3 Prices*/
+.three-prices {
+  width: 50%;
+  position: absolute;
+  display: flex;
+  top: 10%;
+  left: 48%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.three-prices ul{
+  display: block;
+  color: black;
+  padding: 0 18%;
+  font-family: "Pavanam", sans-serif;
+  font-weight: lighter;
+  font-size: 16px;
+  margin-top: 4%;
+  margin-bottom: 4%;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+
+/*Checkout Button*/
+.Checkout-Button{
+  background-color: #74645D;
+  display: flex;
+  position: absolute;
+  left: 20%;
+  width: 60%;
+  height: 13%;
+  top: 58%;
+  flex-direction: row;
+  align-items: start;
+  justify-content: flex-start;
+  z-index: -1;
+}
+
+.Checkout-Button p{
+  display: flex;
+  position: absolute;
+  left: 20%;
+  width: 65%;
+  top: -10%;
+  color: white;
+  font-family: "Pavanam", sans-serif;
+  font-weight: lighter;
+  font-size: 17px;
+}
+
+/*Summary line*/
+.summary-line {
+  border-bottom: 1px solid;
+  color: #6D7A72;
+  width: 95%;
+  height: 0px;
+  top: 80%;
+  position: absolute;
+  left: 2.5%
+}
+
+
+.promo{
+  width: 50%;
+  position: absolute;
+  display: flex;
+  top: 80%;
+  left: 0%;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: initial;
+}
+
+.promo h4{
+  display: block;
+  left: 15%;
+  position: absolute;
+  color: #583B20;
+  font-family: "Pavanam", sans-serif;
+  font-weight: lighter;
+  font-size: 16px;
+}
+
+.sign{
+  width: 50%;
+  position: absolute;
+  display: flex;
+  top: 99%;
+  left: 39%;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.sign h5{
+  display: block;
+  position: absolute;
+  color: #583B20;
+  font-family: "Pavanam", sans-serif;
+  font-weight: lighter;
+  font-size: 16px;
+}
+

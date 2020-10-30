@@ -1,0 +1,179 @@
+
+* {
+  box-sizing: border-box;
+}
+/* Universal Styles */
+
+@font-face {
+  font-family: "La Belle Aurore";
+  src: url("https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap");
+}
+
+/*The top bar with words*/
+.top-bar{
+    text-align: center;
+    background-color: #736C62;
+    color: white;
+    font-family: 'Paprika', cursive;
+    font-weight: 700;
+    font-size: 32px;
+    width: 100%;
+    height: 55px;
+    position: absolute;
+    top: 0;
+}
+
+.top-words{
+    text-decoration: none;
+    color: white;
+}
+
+/*The menu*/
+.header{
+    background-color: rgba(148, 148, 139, 0.71);
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    top: 55px;
+    z-index: 400;
+    font-family: "Pavanam", sans-serif;
+    font-size: 17px;
+    line-height: 1.25;
+    display: flex;
+    flex-direction: row;
+} 
+
+/*Left menu (only page options)*/
+.menu-left {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.menu-left a {
+  display: block;
+  color: #FFFFFF;
+  padding: 0px 20px;
+}
+
+/*Right side of the menu (include icons)*/
+
+.menu-right {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.menu-right a {
+  display: block;
+  color: #FFFFFF;
+  padding: 0px 3px 0px 15px;
+}
+
+.account a{
+  display: block;
+  color: #FFFFFF;
+  padding: 0px 15px 0px 0px;
+}
+
+
+/*The picture*/
+.responsive{
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    position: absolute;
+    top: 20px;
+    z-index: -1;
+}
+
+/*Center Elements*/
+.center-elems{
+    background-color: rgba(189, 170, 156, 0.69);
+    left: 20%;
+    width: 60%;
+    height: 58%;
+    top: 56%;
+    position: absolute;
+    z-index: 500;
+
+} 
+
+.slogan{
+    font-family: "La Belle Aurore", cursive;
+    font-size: 40px;
+    text-align: center;
+    color: #FFFFFF;
+    position: relative;
+    top: 30%
+}
+
+.brown-button{
+    background-color: rgba(116, 100, 93, 0.95);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 30%;
+    width: 45%;
+    height: 18%;
+    top: 76%;
+    position: absolute;
+    z-index: 700;
+}
+
+.shop{
+    font-family: "Habibi";
+    font-size: 30px;
+    color: #FFFFFF;
+}
+
+/*Bottom Elements*/
+.rec-left{
+    background-color: #A39A90;
+    top: 140%;
+    height: 41%;
+    width: 31%;
+    max-width: 320px;
+    min-width: 320px;
+    position: absolute;
+    z-index: -1;
+    overflow: scroll;
+}
+
+.home-pic{
+    position: absolute;
+    top: 144%;
+    height: 41%;
+    width: 31%;
+    max-width: 305px;
+    min-width: 305px;
+    margin-left: 3%;
+    z-index: 300;
+    overflow: scroll;
+}
+
+.texts p{
+    position: absolute;
+    display: flex;
+    font-size: 15px;
+    color: #000000;
+    font-family: "Pavanam", sans-serif;
+    line-height: 1.25;
+    top: 150%;
+    width: 32%;
+    z-index: 200;
+    margin-left: 45%;
+}
+
+/*bottom bar*/
+.bottom-bar{
+    background-color: #F3EFEC;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    top: 202%;
+}

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Pillow Shopping Website</title>
+    <meta charset="UTF-8">
+    <!-- styles -->
+    <link rel="stylesheet" type="text/css" href="cart.css">
+    <script src="web.js" type="text/javascript"></script>
+    <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap" rel="stylesheet">
+  </head>
+
+<body onload="onLoad()">
+  <!-- Page-->
+  <div id="page" class="site"> 
+    <!-- Global header -->
+    <div class="global-header"> 
+      <div class="top-bar">
+        <a class="top-words" href="home.html">Fluff Stuff</a>
+      </div>
+
+      <!--MENU HEADER-->
+      <nav id="main-navigation" class="header">
+
+        <!--LEFT MENU-->
+        <div class="menu-left">
+            <a href="index.html">Home</a>
+            <a href="product.html">Product</a>
+            <a href="about-us.html">About Us</a>
+            <a href="faq.html">FAQ</a>
+        </div>
+        <!--LEFT MENU-->
+
+        <!--RIGHT MENU-->
+        <div class="menu-right">
+            <a href="cart.html"><img src="./images/cart.png" alt="Shopping Cart"></a>
+            <a href="account.html"><img src="./images/user-head.png" alt="Account icon"></a>
+            <p class="account">
+            <a href="account.html">My Account</a>
+            </p>
+        </div>
+        <!--RIGHT MENU-->
+      
+      </nav>
+      <!--MENU HEADER-->
+    </div> 
+    <!-- Global header -->
+
+
+    <!-- Title & Cart Display -->
+    <div class="title-cart">
+      <!-- Title -->
+      <div class="title">
+        <h2>Shopping Cart</h2> 
+      </div>
+      <!-- Title -->
+
+      <!-- Cart -->
+      <div class="cart">
+        <ul>Item</ul>
+        <ul>Price</ul>
+        <ul>Qty</ul>
+        <ul>Total Price</ul>
+      </div>
+      <!-- Cart -->
+
+      <!-- Two lines -->
+      <div class="line">
+        <div class="line1"></div>
+        <div class="line2"></div>
+      </div>
+
+      <!--End: Two lines -->
+
+    </div>
+    <!--End: Title & Chart Display -->
+
+    <!-- Cart Items Display -->
+    <div class="cart-items-display">
+      <!-- Display Box -->
+      <div class="display-box">
+
+        <div class="item-image1">
+          <img class="pic" src="./images/pink_couch1.png" alt="image-1">
+        </div>
+
+        <!-- Item Description -->
+        <div class="item-descrip">
+          <ul>Couch Pillow</ul>
+          <ul><b>Color: </b>After School Special</ul>
+          <ul><b>Size: </b>One Size</ul>
+
+          <div class="two-links">
+            <a href="">Edit</a>
+            <a href="couch_pillow.html">Back to Details</a>
+          </div>
+
+        </div>
+        <!-- End: Item Description -->
+
+        <!-- Price -->
+        <div class="show-price">
+          <p>$ 20.00</p>
+        </div>
+        <!-- End: Price -->
+
+        <!-- Qty -->
+        <div class="Qty-selector">
+          <select class="amount" id="amount">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
+        </div>
+        <!-- End: Qty -->
+
+        <!-- Total Price -->
+        <div class="total-price">
+          <p>$ 20.00</p>
+
+          <div class="remove-link">
+            <a href="">Remove</a>
+          </div>
+
+        </div>
+        <!-- End: Total Price -->
+
+      </div>
+      <!-- End: Display Box -->
+
+
+    </div>
+    <!--End: Cart Items Display -->
+
+    <!-- Order Summary -->
+    <div class="order-summary">
+
+      <p>Order Summary</p>
+
+      <!-- Summary Box -->
+      <div class="summary-box">
+
+        <div class="three-payments">
+          <ul>Subtotal</ul>
+          <ul>Shipping</ul>
+          <ul>Estimated Tax</ul>
+          <ul><b>Total</b></ul>
+        </div>
+
+        <div class="three-prices">
+          <ul>$ 20.00</ul>
+          <ul>TBD</ul>
+          <ul>$ 0.00</ul>
+          <ul><b>$ 20.00</b></ul>
+        </div>
+
+        <div class="Checkout-Button">
+          <p>Proceed to Checkout</p>
+        </div>
+
+        <div class="summary-line"></div>
+
+        <div class="promo">
+          <h4>Promo Code</h4>
+        </div>
+
+        <div class="sign">
+          <h5>+</h5>
+        </div>
+
+      </div>
+      <!-- End: Summary Box -->
+
+    </div>
+    <!-- End: Order Summary -->
+
+    <!-- bottom bar -->
+    <div class="bottom-bar"></div>
+
+  </div>
+  <!--End: Page-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>

@@ -1,0 +1,376 @@
+* {
+  box-sizing: border-box;
+}
+/* Universal Styles */
+
+@font-face {
+  font-family: "La Belle Aurore";
+  src: url("https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap");
+}
+
+/*The top bar with words*/
+.top-bar{
+    text-align: center;
+    background-color: #736C62;
+    color: white;
+    font-family: 'Paprika', cursive;
+    font-weight: 700;
+    font-size: 32px;
+    width: 100%;
+    height: 55px;
+    position: absolute;
+    top: 0;
+}
+
+.top-words{
+    text-decoration: none;
+    color: white;
+}
+
+/*The menu*/
+.header{
+    background-color: rgba(148, 148, 139, 0.71);
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    top: 55px;
+    z-index: 400;
+    font-family: "Pavanam", sans-serif;
+    font-size: 17px;
+    line-height: 1.25;
+    display: flex;
+    flex-direction: row;
+} 
+
+/*Left menu (only page options)*/
+.menu-left {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.menu-left a {
+  display: block;
+  color: #FFFFFF;
+  padding: 0px 20px;
+}
+
+/*Right side of the menu (include icons)*/
+
+.menu-right {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.menu-right a {
+  display: block;
+  color: #FFFFFF;
+  padding: 0px 3px 0px 15px;
+}
+
+.account a{
+  display: block;
+  color: #FFFFFF;
+  padding: 0px 15px 0px 0px;
+}
+
+/*Cart Label*/
+#circle {
+  top:-5px;
+  left:-450%;
+  width:46%;
+  height:41%;
+  position:relative;
+  z-index: 800;
+}
+
+#cartQ{
+  top:-28px;
+  left:-440%;
+  width:46%;
+  height:41%;
+  position:relative;
+  color:white;
+  font:16px Pavanam;
+  z-index: 900;
+}
+
+/*Cuztomizable Details*/
+#big-pic1 {
+  max-width: 400px;
+  max-height: 390px; 
+  position: absolute;
+  /*background-position: center;*/
+  top: 20%;
+  left: 20%;
+}
+
+.product-title{
+  font-family: "Pavanam", sans-serif;
+  font-size: 32px;
+  position: absolute;
+  line-height: 1.25;
+  top: 15%;
+  left: 60%;
+  color: #000000;
+}
+
+.price{
+  font-family: "Pavanam", sans-serif;
+  font-size: 18px;
+  position: absolute;
+  line-height: 1.25;
+  top: 23%;
+  left: 60.5%;
+  color: #000000;
+}
+
+.color-desription{
+  font-family: "Pavanam", sans-serif;
+  font-size: 18px;
+  position: absolute;
+  line-height: 1.25;
+  top: 28%;
+  left: 60.5%;
+  color: #000000;
+}
+
+.c-name{
+  font-family: "Pavanam", sans-serif;
+  font-size: 18px;
+  position: absolute;
+  line-height: 1.25;
+  top: 30.5%;
+  left: 64.5%;
+  color: #000000;
+}
+
+
+/*Color Circles*/
+.four-colors{
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: absolute;
+  top: 34%;
+  left: 60.5%
+}
+
+.After-school-special {
+  height: 25px;
+  width: 25px;
+  background-color: #8FBCC5;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.Morning-Haze{
+  height: 25px;
+  width: 25px;
+  background-color: #E8CC89;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.Cozy-Denim{
+  height: 25px;
+  width: 25px;
+  background-color: #76819C;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.Rainy-Day{
+  height: 25px;
+  width: 25px;
+  background-color: #ECBCA1;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+
+/*Size*/
+
+.size{
+  font-family: "Pavanam", sans-serif;
+  font-size: 18px;
+  position: absolute;
+  line-height: 1.25;
+  top: 37%;
+  left: 60.5%;
+  color: #000000;
+}
+
+.size-button{
+  background-color: rgba(242, 236, 222, 0.45);
+  display: flex;
+  border: 1px solid #000000;
+  left: 63%;
+  width: 7%;
+  height: 35px;
+  top: 43%;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.size-descript{
+  font-family: "Pavanam", sans-serif;
+  font-size: 15px;
+  color: #000000;
+}
+
+
+/*Customizable settings*/
+
+/*Quantity & Drop down list*/
+.quantity{
+  font-family: "Pavanam", sans-serif;
+  font-size: 18px;
+  position: absolute;
+  line-height: 1.25;
+  top: 56%;
+  left: 60.5%;
+  color: #000000;
+}
+
+.q-selector{
+  width: 70%;
+  top:62%;
+  left: 63%;
+  position: absolute;
+}
+
+.amount {
+  padding: 0 10px;
+  border: 1px solid #939395;
+  border-radius: 5px;
+  font: 1.1rem/normal Avenir Book,sans-serif;
+  letter-spacing: .06rem;
+  color: #5c5c5f;
+  background-color: #fdfdf9;
+  position: absolute;
+}
+
+/*Select filled material*/
+.Fill{
+  font-family: "Pavanam", sans-serif;
+  font-size: 18px;
+  position: absolute;
+  line-height: 1.25;
+  top: 47%;
+  left: 60.5%;
+  color: #000000;
+}
+
+.m-selector{
+  top:53%;
+  left: 63%;
+  position: absolute;
+}
+
+.material {
+  padding: 0 10px;
+  border: 1px solid #939395;
+  border-radius: 5px;
+  font: 1.1rem/normal Pavanam,sans-serif;
+  letter-spacing: .06rem;
+  color: #5c5c5f;
+  background-color: #fdfdf9;
+  position: absolute;
+}
+
+
+/*Basket Button*/
+.basket-button{
+  background-color: #84604C;
+  display: flex;
+  position: absolute;
+  left: 62%;
+  width: 18%;
+  height: 40px;
+  line-height: 40px; 
+  top: 68%;
+  align-items: center;
+  justify-content: center;
+}
+
+.basket-button p{
+  font-family: "Pavanam", sans-serif;
+  font-size: 15px;
+  color: #FFFFFF;
+}
+
+/*Separator*/
+.separator{
+  border: 2px solid;
+  color: #E6E5E3;
+  width: 60%;
+  height: 0px;
+  top: 78%;
+  position: absolute;
+  left: 20%
+}
+
+/*Product Descriptions*/
+.detail-title{
+  font-family: "Pavanam", sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  color: #000000;
+  position: absolute;
+  top: 79%;
+  left:23%;
+}
+
+.points{
+  font-family: "Pavanam", sans-serif;
+  font-size: 15px;
+  font-weight: lighter;
+  color: #000000;
+  position: absolute;
+  top: 84%;
+  left:23%;
+  line-height: 1.50;
+}
+
+/*Image Gallery*/
+.display{
+  width: 23%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 20%;
+  left: -2%
+}
+
+.pics{
+  width: 130px;
+  height: 140px;
+  padding: 5px 0px; 
+}
+
+
+/*bottom bar*/
+.bottom-bar{
+    background-color: #F3EFEC;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    top: 180%;
+}
