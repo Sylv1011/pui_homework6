@@ -82,7 +82,7 @@
 /*Cart Label*/
 #circle {
   top:-5px;
-  left:-450%;
+  left:-572%;
   width:46%;
   height:41%;
   position:relative;
@@ -91,7 +91,7 @@
 
 #cartQ{
   top:-28px;
-  left:-440%;
+  left:-560%;
   width:46%;
   height:41%;
   position:relative;
@@ -365,6 +365,21 @@
   padding: 5px 0px; 
 }
 
+#up {
+  width: 140px;
+  height: 45px;
+  top: 16%;
+  position: absolute;;
+  left: 3.5%;
+}
+
+#down {
+  width: 140px;
+  height: 45px;
+  top: 78%;
+  position: absolute;;
+  left: 3.5%;
+}
 
 /*bottom bar*/
 .bottom-bar{

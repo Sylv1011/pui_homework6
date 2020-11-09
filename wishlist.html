@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Pillow Shopping Website</title>
+    <meta charset="UTF-8">
+    <!-- styles -->
+    <link rel="stylesheet" type="text/css" href="wishlist.css">
+    <script src="wishlist.js" type="text/javascript"></script>
+    <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap" rel="stylesheet">
+  </head>
+
+<body onload="onLoad()">
+  <!-- Page-->
+  <div id="page" class="site"> 
+    <!-- Global header -->
+    <div class="global-header"> 
+      <div class="top-bar">
+        <a class="top-words" href="home.html">Fluff Stuff</a>
+      </div>
+
+      <!--MENU HEADER-->
+      <nav id="main-navigation" class="header">
+
+        <!--LEFT MENU-->
+        <div class="menu-left">
+            <a href="index.html">Home</a>
+            <a href="product.html">Product</a>
+            <a href="about-us.html">About Us</a>
+            <a href="faq.html">FAQ</a>
+        </div>
+        <!--LEFT MENU-->
+
+        <!--RIGHT MENU-->
+        <div class="menu-right">
+            <a href="cart.html"><img src="./images/cart.png" alt="Shopping Cart"></a>
+            <a href="wishlist.html"><img src="./images/wishlist.png" alt="Star icon"></a>
+            <a href="account.html"><img src="./images/user-head.png" alt="Account icon"></a>
+            <p class="account">
+            <a href="account.html">My Account</a>
+            </p>
+        </div>
+        <!--RIGHT MENU-->
+      
+      </nav>
+      <!--MENU HEADER-->
+
+    </div> 
+    <!-- Global header -->
+
+    <!-- Title & Cart Display -->
+    <div class="title-wish">
+      <!-- Title -->
+      <div class="title">
+        <h2>Wishlist</h2> 
+      </div>
+      <!-- Title -->
+
+      <!-- Cart -->
+      <div class="cart">
+        <ul>Item</ul>
+        <ul>Price</ul>
+      </div>
+      <!-- Cart -->
+
+      <!-- Two lines -->
+      <div class="line">
+        <div class="line1"></div>
+        <div class="line2"></div>
+      </div>
+
+      <!--End: Two lines -->
+
+    </div>
+    <!--End: Title & Chart Display -->
+
+    <!-- Wish Items Display -->
+    <div class="wish-items-display">
+      <!-- Display Box -->
+      <div class="display-box">
+
+        <div class="item-image1" id="pic"></div>
+
+
+        <p id = "empty"></p>
+        <!-- End: Item Description -->
+
+      </div>
+      <!-- End: Display Box -->
+
+
+    </div>
+    <!--End: Cart Items Display -->
+
+
+    <!-- bottom bar -->
+    <div class="bottom-bar"></div>
+  </div> 
+  <!-- Page-->
+
+
+</body>

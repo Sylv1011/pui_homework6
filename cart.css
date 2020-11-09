@@ -79,6 +79,27 @@
   padding: 0px 15px 0px 0px;
 }
 
+/*Cart Label*/
+#circle {
+  top:-5px;
+  left:-572%;
+  width:46%;
+  height:41%;
+  position:relative;
+  z-index: 800;
+}
+
+#cartQ{
+  top:-28px;
+  left:-560%;
+  width:46%;
+  height:41%;
+  position:relative;
+  color:white;
+  font:16px Pavanam;
+  z-index: 900;
+}
+
 /*bottom bar*/
 .bottom-bar{
     background-color: #F3EFEC;
@@ -103,7 +124,7 @@
 
 /*Cart Attributes Make a Flex box)*/
 .cart {
-  width: 95%;
+  width: 64%;
   position: absolute;
   top: 25%;
   display: flex;
@@ -125,7 +146,7 @@
 .line1 {
   border: 2px solid;
   color: #E6E5E3;
-  width: 95%;
+  width: 64%;
   height: 0px;
   top: 25%;
   position: absolute;
@@ -135,7 +156,7 @@
 .line2 {
   border: 2px solid;
   color: #E6E5E3;
-  width: 95%;
+  width: 64%;
   height: 0px;
   top: 32%;
   position: absolute;
@@ -144,7 +165,7 @@
 
 /*Items Display*/
 .display-box {
-  width: 95%;
+  width: 64%;
   position: absolute;
   top: 35%;
   display: flex;
@@ -154,61 +175,13 @@
 
 }
 
-/*Image*/
-.pic {
-  width: 15%;
-  left: 2%;
+#empty {
+  top: 18%;
+  left: 40%;
   position: absolute;
-}
-
-/*Item Description*/
-.item-descrip {
-  width: 25%;
-  position: absolute;
-  top: 35%;
-  left: 15%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: left;
-}
-
-.item-descrip ul {
-  display: block;
-  color: black;
-  padding: 0 18%;
   font-family: "Pavanam", sans-serif;
   font-weight: lighter;
-  font-size: 15px;
-  margin-top: 3%;
-  margin-bottom: 0px;
-  margin-right: 0px;
-  margin-left: 0px;
-
-}
-
-
-/*Two-links*/
-.two-links {
-  width: 100%;
-  top: 130%;
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: left;
-}
-
-.two-links a{
-  display: block;
-  padding: 0 18%;
-  font-family: "Pavanam", sans-serif;
-  font-weight: lighter;
-  font-size: 15px;
-  margin-top: 2%;
-  margin-bottom: 0px;
-  margin-right: 0px;
-  margin-left: 0px;
+  font-size: 20px;
 }
 
 /*Show Price*/
@@ -220,7 +193,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: left;
+  align-items: center;
 }
 
 .show-price p{
@@ -236,78 +209,12 @@
   margin-left: 0px;
 }
 
-/*Qty*/
-.Qty-selector{
-  width: 60%;
-  top: 55%;
-  left: 62%;
-  position: relative;
-}
 
-.amount {
-  width: 11%;
-  height: 26px;
-  padding: 0 10px;
-  border: 1px solid #939395;
-  border-radius: 5px;
-  font: 1rem/normal Avenir Book,sans-serif;
-  letter-spacing: .06rem;
-  color: #5c5c5f;
-  position: absolute;
-}
-
-/*Total Price*/
-.total-price {
-  width: 25%;
-  position: absolute;
-  top: 35%;
-  left: 80%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: left;
-}
-
-.total-price p{
-  display: block;
-  color: black;
-  padding: 0 18%;
-  font-family: "Pavanam", sans-serif;
-  font-weight: lighter;
-  font-size: 15px;
-  margin-top: 3%;
-  margin-bottom: 0px;
-  margin-right: 0px;
-  margin-left: 0px;
-}
-
-/*Remove-link*/
-.remove-link {
-  width: 100%;
-  top: 570%;
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: left;
-}
-
-.remove-link a{
-  display: block;
-  padding: 0 18%;
-  font-family: "Pavanam", sans-serif;
-  font-weight: lighter;
-  font-size: 15px;
-  margin-top: 2%;
-  margin-bottom: 0px;
-  margin-right: 0px;
-  margin-left: 0px;
-}
 
 /*Order Summary*/
 .order-summary p{
-  top: 82%;
-  left: 55%;
+  top: 19%;
+  left: 70%;
   position: absolute;
   font-family: "Pavanam", sans-serif;
   font-weight: lighter;
@@ -318,10 +225,10 @@
 .summary-box {
   display: flex;
   border: 1px solid #6D7A72;
-  left: 53%;
-  width: 40%;
+  left: 70%;
+  width: 28%;
   height: 48%;
-  top: 90%;
+  top: 25%;
   position: absolute;
 }
 
@@ -375,7 +282,13 @@
   margin-left: 0px;
 }
 
+#tt {
+  font-weight: bold;
+}
 
+#p-total{
+  font-weight: bold;
+}
 /*Checkout Button*/
 .Checkout-Button{
   background-color: #74645D;
@@ -386,17 +299,16 @@
   height: 13%;
   top: 58%;
   flex-direction: row;
-  align-items: start;
-  justify-content: flex-start;
+  align-items: center;
+  justify-content: center;
   z-index: -1;
 }
 
-.Checkout-Button p{
+.p-button{
   display: flex;
   position: absolute;
-  left: 20%;
-  width: 65%;
-  top: -10%;
+  left: 15%;
+  width: 100%;
   color: white;
   font-family: "Pavanam", sans-serif;
   font-weight: lighter;

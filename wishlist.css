@@ -1,0 +1,187 @@
+* {
+  box-sizing: border-box;
+}
+/* Universal Styles */
+
+@font-face {
+  font-family: "La Belle Aurore";
+  src: url("https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap");
+}
+
+/*The top bar with words*/
+.top-bar{
+    text-align: center;
+    background-color: #736C62;
+    color: white;
+    font-family: 'Paprika', cursive;
+    font-weight: 700;
+    font-size: 32px;
+    width: 100%;
+    height: 55px;
+    position: absolute;
+    top: 0;
+}
+
+.top-words{
+    text-decoration: none;
+    color: white;
+}
+
+/*The menu*/
+.header{
+    background-color: rgba(148, 148, 139, 0.71);
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    top: 55px;
+    z-index: 400;
+    font-family: "Pavanam", sans-serif;
+    font-size: 17px;
+    line-height: 1.25;
+    display: flex;
+    flex-direction: row;
+} 
+
+/*Left menu (only page options)*/
+.menu-left {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.menu-left a {
+  display: block;
+  color: #FFFFFF;
+  padding: 0px 20px;
+}
+
+/*Right side of the menu (include icons)*/
+
+.menu-right {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.menu-right a {
+  display: block;
+  color: #FFFFFF;
+  padding: 0px 3px 0px 15px;
+}
+
+.account a{
+  display: block;
+  color: #FFFFFF;
+  padding: 0px 15px 0px 0px;
+}
+
+/*Cart Label*/
+#circle {
+  top:-5px;
+  left:-572%;
+  width:46%;
+  height:41%;
+  position:relative;
+  z-index: 800;
+}
+
+#cartQ{
+  top:-28px;
+  left:-560%;
+  width:46%;
+  height:41%;
+  position:relative;
+  color:white;
+  font:16px Pavanam;
+  z-index: 900;
+}
+
+
+/*bottom bar*/
+.bottom-bar{
+    background-color: #F3EFEC;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    top: 200%;
+}
+
+/*Title Shopping Cart*/
+.title h2{
+  font-family: "Gayathri", sans-serif;
+  font-size: 25px;
+  font-weight: lighter;
+  color: #000000;
+  position: absolute;
+  top: 15%;
+  left: 5%;
+  text-align: center;
+  line-height: 1.50;
+}
+
+/*Cart Attributes Make a Flex box)*/
+.cart {
+  width: 64%;
+  position: absolute;
+  top: 25%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.cart ul {
+  display: block;
+  color: black;
+  padding: 0px 25%;
+  font-family: "Pavanam", sans-serif;
+  font-weight: lighter;
+  font-size: 18px;
+}
+
+/*Two lines*/
+.line1 {
+  border: 2px solid;
+  color: #E6E5E3;
+  width: 64%;
+  height: 0px;
+  top: 25%;
+  position: absolute;
+  left: 2.5%
+}
+
+.line2 {
+  border: 2px solid;
+  color: #E6E5E3;
+  width: 64%;
+  height: 0px;
+  top: 32%;
+  position: absolute;
+  left: 2.5%
+}
+
+/*Items Display*/
+.display-box {
+  width: 64%;
+  position: absolute;
+  top: 35%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+
+}
+
+#empty {
+  top: 18%;
+  left: 40%;
+  position: absolute;
+  font-family: "Pavanam", sans-serif;
+  font-weight: lighter;
+  font-size: 20px;
+}
+

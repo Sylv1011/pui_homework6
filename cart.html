@@ -5,13 +5,15 @@
     <meta charset="UTF-8">
     <!-- styles -->
     <link rel="stylesheet" type="text/css" href="cart.css">
-    <script src="web.js" type="text/javascript"></script>
+    <script src="web_cart.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap" rel="stylesheet">
   </head>
 
 <body onload="onLoad()">
   <!-- Page-->
   <div id="page" class="site"> 
+
+
     <!-- Global header -->
     <div class="global-header"> 
       <div class="top-bar">
@@ -19,6 +21,7 @@
       </div>
 
       <!--MENU HEADER-->
+
       <nav id="main-navigation" class="header">
 
         <!--LEFT MENU-->
@@ -32,13 +35,21 @@
 
         <!--RIGHT MENU-->
         <div class="menu-right">
-            <a href="cart.html"><img src="./images/cart.png" alt="Shopping Cart"></a>
-            <a href="account.html"><img src="./images/user-head.png" alt="Account icon"></a>
-            <p class="account">
-            <a href="account.html">My Account</a>
-            </p>
+          <a href="cart.html"><img src="./images/cart.png" alt="Shopping Cart"></a>
+          <a href="wishlist.html"><img src="./images/wishlist.png" alt="Star icon"></a>
+          <a href="account.html"><img src="./images/user-head.png" alt="Account icon"></a>
+          <p class="account">
+          <a href="account.html">My Account</a>
+          </p>
+          <div class="cart-l">
+            <!-- cart label -->
+            <img id="circle" src="" alt="cart-c">
+            <div id="cartQ" class="small-circle"> </div>
+            <!-- End: cart label -->            
+          </div>
         </div>
         <!--RIGHT MENU-->
+
       
       </nav>
       <!--MENU HEADER-->
@@ -79,51 +90,11 @@
       <!-- Display Box -->
       <div class="display-box">
 
-        <div class="item-image1">
-          <img class="pic" src="./images/pink_couch1.png" alt="image-1">
-        </div>
+        <div class="item-image1" id="pic"></div>
 
-        <!-- Item Description -->
-        <div class="item-descrip">
-          <ul>Couch Pillow</ul>
-          <ul><b>Color: </b>After School Special</ul>
-          <ul><b>Size: </b>One Size</ul>
 
-          <div class="two-links">
-            <a href="">Edit</a>
-            <a href="couch_pillow.html">Back to Details</a>
-          </div>
-
-        </div>
+        <p id = "empty"></p>
         <!-- End: Item Description -->
-
-        <!-- Price -->
-        <div class="show-price">
-          <p>$ 20.00</p>
-        </div>
-        <!-- End: Price -->
-
-        <!-- Qty -->
-        <div class="Qty-selector">
-          <select class="amount" id="amount">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-          </select>
-        </div>
-        <!-- End: Qty -->
-
-        <!-- Total Price -->
-        <div class="total-price">
-          <p>$ 20.00</p>
-
-          <div class="remove-link">
-            <a href="">Remove</a>
-          </div>
-
-        </div>
-        <!-- End: Total Price -->
 
       </div>
       <!-- End: Display Box -->
@@ -144,19 +115,19 @@
           <ul>Subtotal</ul>
           <ul>Shipping</ul>
           <ul>Estimated Tax</ul>
-          <ul><b>Total</b></ul>
+          <ul id="p-total">Total</ul>
         </div>
 
         <div class="three-prices">
-          <ul>$ 20.00</ul>
-          <ul>TBD</ul>
-          <ul>$ 0.00</ul>
-          <ul><b>$ 20.00</b></ul>
+          <ul id="st"></ul>
+          <ul id="ship"></ul>
+          <ul id="tax"></ul>
+          <ul id="tt"></ul>
         </div>
 
-        <div class="Checkout-Button">
-          <p>Proceed to Checkout</p>
-        </div>
+        <button type="button" class="Checkout-Button">
+          <span class="p-button">Proceed to Checkout</span>
+        </button>
 
         <div class="summary-line"></div>
 

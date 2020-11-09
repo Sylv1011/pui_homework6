@@ -1,6 +1,6 @@
 // Object Constructors
 function green(){
-  this.n = "After School Special";
+  this.n = " After School Special";
   this.c = "green";
   this.image1 = "./images/green_couch1.png";
   this.image2 = "./images/green_couch1.png";
@@ -9,7 +9,7 @@ function green(){
 }
 
 function yellow(){
-  this.n = "Morning Haze";
+  this.n = " Morning Haze";
   this.c = "yellow";
   this.image1 = "./images/yellow_couch1.png";
   this.image2 = "./images/yellow_couch1.png";
@@ -18,7 +18,7 @@ function yellow(){
 }
 
 function blue(){
-  this.n = "Cozy Denim";
+  this.n = " Cozy Denim";
   this.c = "blue";
   this.image1 = "./images/blue_couch1.png";
   this.image2 = "./images/blue_couch1.png";
@@ -27,7 +27,7 @@ function blue(){
 }
 
 function pink(){
-  this.n = "Rainy Day";
+  this.n = " Rainy Day";
   this.c = "pink";
   this.image1 = "./images/pink_couch1.png";
   this.image2 = "./images/pink_couch1.png";
@@ -54,7 +54,7 @@ function onLoad () {
   var tq = 0;
   
   //clear storage 
-  localStorage.setItem("savedTotalQuant", JSON.stringify(tq)); 
+  //localStorage.setItem("savedTotalQuant", JSON.stringify(tq)); 
   var totalQuant=JSON.parse(localStorage.getItem("savedTotalQuant"));
   if (totalQuant==null){
     localStorage.setItem("savedTotalQuant", JSON.stringify(tq));
@@ -63,7 +63,7 @@ function onLoad () {
   var list=[];
   
   //clear storage 
-  localStorage.setItem("savedList", JSON.stringify(list));  
+  //localStorage.setItem("savedList", JSON.stringify(list));  
   var nowList = JSON.parse(localStorage.getItem("savedList")); 
   if (nowList==null){
     localStorage.setItem("savedList", JSON.stringify(list));
@@ -89,6 +89,7 @@ function onLoad () {
     document.getElementById("cartQ").textContent= s;
 
   });
+
 
   // initial pictures and color
   document.getElementById("circle").setAttribute("src", "./images/cartblue.png" );
@@ -143,19 +144,57 @@ function onLoad () {
   // click on first small picture 
   document.getElementById("s-pic2").addEventListener("click", function() {
     document.getElementById("big-pic1").setAttribute("src", product.image2);
+    picCount = 1;
   });
 
   // click on second small picture 
   document.getElementById("s-pic3").addEventListener("click", function() {
     document.getElementById("big-pic1").setAttribute("src", product.image3);
+    picCount = 2;
 
   });
 
   // click on third small picture 
   document.getElementById("s-pic4").addEventListener("click", function() {
     document.getElementById("big-pic1").setAttribute("src", product.image4);
+    picCount = 3;
   });
 
+  // Extra Credit: Arrows
+  // click on up arrow
+  document.getElementById("up").addEventListener("click", function() {
+  if (picCount>1){
+    picCount-=1;}
+  if (picCount === 1) 
+    {
+      document.getElementById("big-pic1").setAttribute("src", product.image1);
+    } 
+    else if (picCount === 2) 
+    {
+      document.getElementById("big-pic1").setAttribute("src", product.image3);
+    } 
+    else if(picCount === 3)
+    {
+      document.getElementById("big-pic1").setAttribute("src", product.image4);
+    }
+  });
+  // click on down arrow
+  document.getElementById("down").addEventListener("click", function() {
+  if (picCount<3){
+  picCount+=1;}
+  if (picCount === 1) 
+    {
+      document.getElementById("big-pic1").setAttribute("src", product.image1);
+    } 
+    else if (picCount === 2) 
+    {
+      document.getElementById("big-pic1").setAttribute("src", product.image3);
+    } 
+    else if(picCount === 3)
+    {
+      document.getElementById("big-pic1").setAttribute("src", product.image4);
+    }
+  });
 
 };
 
